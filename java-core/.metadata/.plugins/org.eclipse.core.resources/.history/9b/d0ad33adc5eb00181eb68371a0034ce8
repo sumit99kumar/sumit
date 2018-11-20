@@ -1,0 +1,22 @@
+package com.app.employeeDao;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.app.employee.EmployeeInfo;
+
+public class EmployeeInfoDao {
+	
+public static void main(String[] args) {
+	
+	SessionFactory sessionFactory = EmployeeUtil.getSessionFactory();
+	Session session = sessionFactory.openSession();
+BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
+	EmployeeInfo employeeInfo= new EmployeeInfo();
+	employeeInfo.setEmpId(empId);
+	
+}
+}

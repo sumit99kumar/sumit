@@ -1,0 +1,5 @@
+package com.app.employee.util;
+
+public class EmployeeUtil {
+
+}

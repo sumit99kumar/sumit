@@ -1,0 +1,5 @@
+package com.app.employee.dao;
+
+public class EmployeeDao {
+
+}

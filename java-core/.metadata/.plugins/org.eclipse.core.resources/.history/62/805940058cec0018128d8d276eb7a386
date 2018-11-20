@@ -1,0 +1,52 @@
+package com.app.bean;
+
+public class EmployeeBean {
+	
+	private String EmpId;
+	private String First_name;
+	private String Last_name;
+	private String Address;
+	public String getEmpId() {
+		return EmpId;
+	}
+	public void setEmpId(String empId) {
+		EmpId = empId;
+	}
+	public String getFirst_name() {
+		return First_name;
+	}
+	public void setFirst_name(String first_name) {
+		First_name = first_name;
+	}
+	public String getLast_name() {
+		return Last_name;
+	}
+	public void setLast_name(String last_name) {
+		Last_name = last_name;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("EmployeeBean [EmpId=");
+		builder.append(EmpId);
+		builder.append(", First_name=");
+		builder.append(First_name);
+		builder.append(", Last_name=");
+		builder.append(Last_name);
+		builder.append(", Address=");
+		builder.append(Address);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
+	
+	
+
+}

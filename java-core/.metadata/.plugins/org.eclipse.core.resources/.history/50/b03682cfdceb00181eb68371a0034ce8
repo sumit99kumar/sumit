@@ -1,0 +1,28 @@
+package com.app.employee.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.app.employee.util.EmployeeUtil;
+import com.app.entity.EmployeeEntity;
+
+public class EmployeeDao {
+	
+public static void main(String[] args) {
+	//Create sesson factory
+	SessionFactory factory = EmployeeUtil.getFactory();
+	//create sesson
+	Session session = factory.openSession();
+	//create entity obj
+	EmployeeEntity employeeEntty=new EmployeeEntity();
+	employeeEntty.setEmpId("66");
+	employeeEntty.setFirst_Name("sumit");
+	employeeEntty.setLast_Name("kumar");
+	employeeEntty.setAddress("sbg");
+	System.out.println(employeeEntty);
+	//create trangection obj and begin trangection
+	Transaction transaction = session.beginTransaction();
+}	
+
+}

@@ -1,0 +1,15 @@
+package com.app.employee.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.app.employee.util.EmployeeUtil;
+
+public class EmployeeDao {
+	
+public static void main(String[] args) {
+	SessionFactory factory = EmployeeUtil.getFactory();
+	Session Session = factory.openSession();
+}	
+
+}

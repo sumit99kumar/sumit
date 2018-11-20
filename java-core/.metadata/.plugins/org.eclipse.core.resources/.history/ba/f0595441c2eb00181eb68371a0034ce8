@@ -1,0 +1,5 @@
+package com.app.employeeDao;
+
+public class HibernateUtil {
+
+}

@@ -1,0 +1,7 @@
+com\jackrutorial\config\WebInitializer.class
+com\jackrutorial\service\UserServiceImpl.class
+com\jackrutorial\service\UserService.class
+com\jackrutorial\dao\UserMapper.class
+com\jackrutorial\config\WebConfig.class
+com\jackrutorial\dao\UserDao.class
+com\jackrutorial\model\User.class

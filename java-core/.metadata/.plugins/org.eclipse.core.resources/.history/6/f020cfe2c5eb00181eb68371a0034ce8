@@ -1,0 +1,36 @@
+package com.app.employeeDao;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.app.employee.EmployeeInfo;
+
+public class EmployeeInfoDao {
+	
+public static void main(String[] args) throws IOException {
+	
+	SessionFactory sessionFactory = EmployeeUtil.getSessionFactory();
+	Session session = sessionFactory.openSession();
+BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
+
+System.out.print("Enter user Id : ") ;
+String id = reader.readLine();
+
+System.out.print("Enter user First_Name : ") ;
+String FirstName = reader.readLine();
+
+System.out.print("Enter user Last_Name : ") ;
+String LastName = reader.readLine();
+
+System.out.print("Enter user Address : ") ;
+String Address = reader.readLine();
+
+	EmployeeInfo employeeInfo= new EmployeeInfo();
+	employeeInfo.setEmpId("");
+	
+}
+}

@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Tue Nov 20 13:01:21 IST 2018
+org.eclipse.jst.j2ee.server\:employeeservce=WEB-INF/lib/employeeservce-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:employeeInfo=WEB-INF/lib/employeeInfo-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\sumit\ kumar\\.m2\\repository\\org\\springframework\\spring-web\\4.3.9.RELEASE\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar

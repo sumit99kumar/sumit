@@ -1,0 +1,30 @@
+package com.app.employeeDao;
+
+import org.hibernate.HibernateException;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class EmployeeUtil {
+	
+	private static SessionFactory sessionFactory;
+
+	static {
+		
+		try {
+			Configuration configuration= new Configuration().configure(EmployeeUtil.class.getResource("/hibernate.cfg.xml"));
+			
+			sessionFactory = configuration.buildSessionFactory();
+		} catch (HibernateException e) {
+			System.out.println("cannot fnd cfg file");
+			e.printStackTrace();
+		}
+	}
+	public static SessionFactory getSessionFactory(){
+		
+		return sessionFactory;
+	}
+	public static void Shutdown()
+	{
+		sessionFactory.close();
+	}
+}

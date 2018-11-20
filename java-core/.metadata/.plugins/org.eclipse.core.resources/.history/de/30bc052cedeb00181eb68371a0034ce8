@@ -1,0 +1,14 @@
+package com.app.emp.servce;
+
+import com.app.employee.dao.EmployeeDao;
+
+public class EmployeeServce {
+
+	public String insertEmployee()
+	{
+		EmployeeDao empdao=new EmployeeDao();
+		empdao.persistEmp()
+		return null;
+		
+	}
+}

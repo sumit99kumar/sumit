@@ -1,0 +1,8 @@
+ package com.app.config;
+ @Configuration
+ 
+ @ComponentScan("com.app.*")
+
+public class ApplicationContextConfig {
+
+}

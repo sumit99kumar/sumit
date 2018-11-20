@@ -1,0 +1,5 @@
+package com.app.emp.servce.pojo;
+
+public class EmployeeBeanServce {
+
+}

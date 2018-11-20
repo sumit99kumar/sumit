@@ -1,0 +1,54 @@
+package com.app.employee;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EmployeeInfo")
+public class EmployeeInfo {
+	@id
+	private String EmpId;
+	private String FirstName;
+	private String LastName;
+	private String Address;
+	public String getEmpId() {
+		return EmpId;
+	}
+	public void setEmpId(String empId) {
+		EmpId = empId;
+	}
+	public String getFirstName() {
+		return FirstName;
+	}
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
+	}
+	public String getLastName() {
+		return LastName;
+	}
+	public void setLastName(String lastName) {
+		LastName = lastName;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("EmployeeInfo [EmpId=");
+		builder.append(EmpId);
+		builder.append(", FirstName=");
+		builder.append(FirstName);
+		builder.append(", LastName=");
+		builder.append(LastName);
+		builder.append(", Address=");
+		builder.append(Address);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+
+}

@@ -1,0 +1,13 @@
+package com.app.employeeDao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class EmployeeInfoDao {
+	
+public static void main(String[] args) {
+	
+	SessionFactory sessionFactory = EmployeeUtil.getSessionFactory();
+	Session Session = sessionFactory.openSession();
+}
+}

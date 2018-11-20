@@ -1,0 +1,7 @@
+package com.app.employeeDao;
+
+public class EmployeeInfoDao {
+	
+EmployeeUtil employeeUtil= new EmployeeUtil();
+employeeUtil.getSessionFactory()
+}

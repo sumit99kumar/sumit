@@ -1,0 +1,8 @@
+package com.app.entity;
+
+import java.io.Serializable;
+
+public class Applicant implements Serializable {
+		
+
+}
